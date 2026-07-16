@@ -1,0 +1,15 @@
+.vs/
+.dotnet/
+bin/
+obj/
+release/
+payload/
+*.msi
+*.exe
+*.dll
+*.pdb
+*.log
+*.user
+.all-app-*/
+assets/icon-chroma.png
+src/aggregate-proxy/tmp-*/

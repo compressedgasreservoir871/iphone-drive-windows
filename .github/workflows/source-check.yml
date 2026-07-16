@@ -1,0 +1,19 @@
+name: Source checks
+on: [push, pull_request]
+jobs:
+  build-proxy:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - run: dotnet restore src/aggregate-proxy/AggregateProxy.csproj
+      - run: dotnet build src/aggregate-proxy/AggregateProxy.csproj -c Release --no-restore
+      - name: Reject proprietary or generated binaries
+        shell: pwsh
+        run: |
+          $tracked = git ls-files
+          if ($tracked | Where-Object { $_ -match '(?i)AppleMobileDeviceSupport|\.(msi|exe|dll|pdb)$' }) {
+            throw 'A proprietary installer or generated binary is tracked by Git.'
+          }
